@@ -13,7 +13,7 @@ Pressing any key will commence the game and Vilgax will Attack. Ben can be moved
 
 https://user-images.githubusercontent.com/84394929/191300833-14920e9d-16d0-48a3-8cf8-34ab321464f5.mp4
 
-<--Any advice, suggestions regarding my code will be greatly appreciated! -->
+<--Any advice, suggestions regarding my code would be greatly appreciated! -->
 
 
 
