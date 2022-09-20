@@ -9,9 +9,11 @@ Pressing any key will commence the game and Vilgax will Attack. Ben can be moved
 
 ![Screenshot 2022-09-20 at 16-44-08 Ben10 Alien Force](https://user-images.githubusercontent.com/84394929/191300724-f0923ef9-62f9-4530-be4d-72e27e47b586.png)
 
-# The video preview of the game can be viewed below:
+# The video preview of the game can be viewed below: <br>
 
-https://user-images.githubusercontent.com/84394929/191300833-14920e9d-16d0-48a3-8cf8-34ab321464f5.mp4
+
+https://user-images.githubusercontent.com/84394929/191311310-2486da22-5d9f-40e2-b5a3-f82fcfe7a09a.mp4
+
 
 <--Any advice, suggestions regarding my code would be greatly appreciated! -->
 
