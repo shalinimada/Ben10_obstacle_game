@@ -1,0 +1,211 @@
+*{ /*to change the pre-built margin and padding*/
+    margin:0;
+    padding:0; 
+    user-select: none;
+}
+body{
+    background-color: cornflowerblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.world{
+    height :100vh;
+    width:100vw;
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    width:150px;
+    height: 150px;
+    background-image: url(./images/characters/logo.png);
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+/*PARTS*/
+
+.start{
+    position: absolute;
+    font-family: monospace;
+    font-size: 7vmin;
+    top:50%;/*to be in the center of the screen*/
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: chartreuse;
+    text-shadow:
+    /* black glow */ 
+    0 0 3px black,   
+    0 0 6px black,
+    0 0 9px chartreuse, /* increasing radius to have more layers for the glow */
+    /* Neon Green Glow */ 
+    0 0 25px  chartreuse,  
+    0 0 30px chartreuse,  
+    0 0 35px chartreuse;/* Larger blur radius for the Green glow */ ;
+}
+.hide{
+    display:none;
+}
+
+#scorecount{ 
+    font-size: 6vmin;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    color: chartreuse;
+    text-shadow:
+    /* black glow */ 
+    0 0 3px black,   
+    0 0 6px black,
+    0 0 9px black,  /* increasing radius to have more layers for the glow */
+    /* Neon Green Glow */ 
+    0 0 25px  chartreuse,  
+    0 0 30px chartreuse,  
+    0 0 35px chartreuse;/* Larger blur radius for the Green glow */ ;
+}
+
+.gameover{
+    font-size: 83px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    position: absolute;
+    right: 372px;
+    top: 248px;
+    /* EFFECTS */
+    color: chartreuse;
+    text-shadow:
+    /* black glow */ 
+    0 0 2px black,   
+    0 0 4px black,
+    0 0 20px black,/* increasing radius to have more layers for the glow */
+    /* Neon Green Glow */
+    0 0 25px  chartreuse,  
+    0 0 30px chartreuse,  
+    0 0 35px chartreuse;/* Larger blur radius for the Green glow */ ;
+}
+
+#restart{
+    position: absolute;
+    font-family: monospace;
+    font-size: 6vmin;
+    top:60%;/*to be in the center of the screen*/
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: chartreuse;
+    text-shadow:
+    /* black glow */ 
+    0 0 3px black,   
+    0 0 6px black,
+    0 0 9px chartreuse,    /* increasing radius to have more layers for the glow */
+    /* Neon Green Glow */ 
+    0 0 25px  chartreuse,  
+    0 0 30px chartreuse,  
+    0 0 35px chartreuse;/* Larger blur radius for the Green glow */ ;
+}
+
+/* Pulsating Effect for Gameover*/
+
+.pulse{
+    animation: pulse 1s infinite alternate; /*animation is pulsate and the duration of each cycle is 1.5s forever alternate */
+    /* animation-direction: alternate; 
+    animation-iteration-count: infinite; */
+}
+
+@keyframes pulse {
+    0%{
+        text-shadow: 
+        0 0 2px black,   
+        0 0 4px black,  /* increasing radius to have more layers for the glow */
+        0 0 6px black, 
+        0 0 8px chartreuse,  
+        0 0 10px chartreuse,  /* Larger blur radius for the glow */
+        0 0 12px chartreuse,  
+        0 0 14px chartreuse;
+    }
+    100%{
+        text-shadow: 
+        0 0 5px rgba(0, 0, 0, 0.619),   
+        0 0 10px black,  /* increasing radius to have more layers for the glow */
+        0 0 15px black, 
+        0 0 20px chartreuse,  
+        0 0 25px chartreuse,  /* Larger blur radius for the  glow */
+        0 0 30px chartreuse,  
+        0 0 35px chartreuse;
+    }
+    
+}
+
+
+
+/* CHARACTERS */
+
+.ben{
+    width: 132px;
+    height: 225px;
+    background-image: url(./images/characters/ben.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 13px;
+    left: 49px;
+}
+
+.benAni{
+    animation : benjump 3s linear infinite;
+} 
+
+@keyframes benjump{
+    0%{
+        bottom:0px;
+    }
+    25%{
+        bottom: 200px;
+    }
+    50%{
+        bottom: 400px;
+    }
+    75%{
+        bottom: 200px;
+    }
+    100%{
+        bottom:0px;
+    }
+}
+
+/* VILLAIN */
+
+.obstacle{
+    width: 146px;
+    height: 199px;
+    background-image: url(./images/characters/vil.png);
+    background-size: cover;
+
+    position: absolute;
+    bottom: 10px;
+    left: 1000px;
+} 
+
+.obsAni{
+    animation: obsAni 4s linear infinite;
+} 
+
+@keyframes obsAni{
+    0%{
+        left: 1500px;
+    }
+    100%{
+        left:-20vh;
+    } 
+}
+
+
+
