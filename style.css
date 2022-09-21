@@ -185,7 +185,7 @@ body{
 
 .obstacle{
     width: 146px;
-    height: 199px;
+    height: 250px;
     background-image: url(./images/characters/vilgax.png);
     background-size: cover;
 
