@@ -1,5 +1,6 @@
 ## Ben10_obstacle_game
 This is an Obstacle game based on Ben10 Alien force, a beloved cartoon of my childhood. I created this project using HTML, CSS, JS and lots of love.
+You can play the game here : https://neon-trifle-cb0433.netlify.app/
 
 The game begins with Ben Tennyson and his long-standing enemy Vilgax on the planet Anur Transyl. The Omnitrix is out of charge and Vilgax is going to attack! <br>
 
@@ -14,7 +15,7 @@ Pressing any key will commence the game and Vilgax will Attack. Ben can be moved
 https://user-images.githubusercontent.com/84394929/191311310-2486da22-5d9f-40e2-b5a3-f82fcfe7a09a.mp4
 
 
-<--Any advice, suggestions regarding my code would be greatly appreciated! -->
+<-- Any advice, suggestions regarding my code would be greatly appreciated! -->
 
 
 
